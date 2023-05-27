@@ -1,0 +1,64 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	margin: 3rem;
+	font-size: 1rem;
+	font-family: system-ui;
+}
+/* MAIN STYLES */
+
+HTML {
+	color-scheme: light dark;
+}
+.wrapper {
+	margin: 1rem;
+	padding: 1rem;
+	background: hsl(200 50% 50% / 0.4);
+	border-radius: 0.5rem;
+
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.5s ease-out;
+}
+
+.wrapper:hover {
+	grid-template-rows: 1fr;
+}
+
+.inner {
+	overflow: hidden;
+}
